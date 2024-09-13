@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@100;200;300;400;500&family=Bellefair&display=swap');
+
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 40px;
+    left: 3.82%;
+    width: 96.2%;
+    text-align: left;
+    height: 96px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.hamburger-button {
+    display: none;
+}
+
+.Right {
+    z-index: 1;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(30px);
+}
+
+.number {
+    font-weight: 700;
+}
+
+.links {
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+}
+
+.links:hover {
+    border-bottom: 2px #ffffff solid;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.active {
+    border-bottom: 2px white solid;
+}
+
+.active:hover {
+    border-bottom: 2px white solid;
+    opacity: 1;
+}
+
+.rule {
+    position: absolute;
+    left: 6.94%;
+    border-top: 0.5px rgb(68, 67, 67);
+    width: 35%;
+    z-index: 2;
+}
+
+.offcanvas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    z-index: 20;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+.offcanvas.show {
+    transform: translateX(0);
+    display: block;
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.close-button {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button img {
+    width: 25px;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.sidebar-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1226px) {
+    .Navbar {
+        top: 0;
+    }
+
+    .links {
+        font-size: 14px;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .rule {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Navbar {
+        display: flex;
+    }
+
+    .Right {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block;
+        background: transparent;
+        border: none;
+        margin-right: 20px;
+    }
+
+    .offcanvas {
+        width: 67.73%;
+    }
+
+    .offcanvas.show {
+        visibility: visible;
+        display: block;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+    }
+
+    .number {
+        display: block;
+        font-size: 17px;
+    }
+
+    .offcanvas-header {
+        padding-top: 34px;
+    }
+
+    .btn-close {
+        position: absolute;
+        right: 34px;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 32px;
+    }
+
+    .sidebar-right {
+        margin-top: 64.95px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        height: 40px;
+        width: 100%;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .links.active {
+        border: none;
+        opacity: 1;
+    }
+}

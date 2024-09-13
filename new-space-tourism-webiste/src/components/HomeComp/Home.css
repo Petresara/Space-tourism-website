@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@100;200;300;400;500&family=Bellefair&display=swap');
+
+.Home {
+    font-family: Barlow Condensed;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: url("../../Imgs/background-home-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: hidden;
+}
+
+.home-top {
+    height: 30%;
+}
+
+.home-bottom {
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+}
+
+.home-left {
+    width: 50%;
+}
+
+.home-text {
+    width: 28rem;
+    top: 6rem;
+    left: 22.9%;
+    position: relative;
+    text-align: left;
+}
+
+.home-first {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.home-second {
+    font-size: 13rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.home-third {
+    font-size: 1.25rem;
+    margin: 0;
+    line-height: 2rem;
+    width: 27.75rem;
+    text-align: justify;
+}
+
+.home-right {
+    width: 50%;
+}
+
+.home-explore {
+    position: relative;
+    top: 200px;
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.125rem;
+    color: #0B0D17;
+}
+.home-explore:hover {
+    box-shadow: 0 0 0 70px rgba(151, 147, 147, 0.09);
+    backdrop-filter: blur(81.5485px);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1226px) {
+    .Home {
+        background: url("../../Imgs/background-home-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-top {
+        height: auto;
+    }
+
+    .home-bottom {
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+    
+    .home-left {
+        width: auto;
+        padding: 0 10vw 10vh;
+    }
+
+    .home-text {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-second {
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9.375rem;
+        line-height: 9.375rem;
+        color: #FFFFFF;
+    }
+
+    .home-third {
+        margin: auto;
+        width: 27.75rem;
+        position: static;
+        text-align: center;
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        text-align: center;
+        color: #D0D6F9;
+    }
+
+    .home-right {
+        width: 100%;
+    }
+
+    .home-explore {
+        top: 0;
+        margin-bottom: 5vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Home {
+        background: url("../../Imgs/background-home-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-bottom {
+        margin-top: 3vh;
+    }
+
+    .home-left {
+        padding: 0 6vw;
+    }
+
+    .home-first {
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.1875rem;
+        text-align: center;
+        letter-spacing: 0.16875rem;
+        color: #D0D6F9;
+        margin-bottom: 1rem;
+    }
+
+    .home-second {
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5rem;
+        line-height: 6.25rem;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 1rem;
+    }
+
+    .home-third {
+        width: 100%;
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
+        text-align: center;
+        color: #D0D6F9;
+        margin-bottom: 5rem;
+    }
+
+    .home-explore {
+        width: 9.375rem;
+        height: 9.375rem;
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.25rem;
+        line-height: 1.4375rem;
+        text-align: center;
+        letter-spacing: 0.075rem;
+        color: #0B0D17;
+    }
+    .home-explore:hover {
+        box-shadow: 0 0 0 40px rgba(151, 147, 147, 0.09);
+        backdrop-filter: blur(81.5485px);
+        transition: box-shadow 0.5s ease-in-out;
+    }
+}

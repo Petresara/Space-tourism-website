@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@100;200;300;400;500&family=Bellefair&display=swap');
+
+.Crew {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: url("../../Imgs/background-crew-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.crew-top {
+    height: 8.5rem;
+}
+
+.crew-bottom {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    position: relative;
+}
+
+.crew-left {
+    text-align: left;
+    width: 50%;
+}
+
+.crew-title {
+    position: relative;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+    letter-spacing: 0.295rem;
+    margin-top: 4.75rem;
+    display: block;
+    left: 0;
+    text-align: left;
+    margin-left: 7.5vw;
+}
+
+.crew-title>span {
+    font-weight: 700;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.crew-details {
+    position: relative;
+    left: 14.75vw;
+    margin-top: 9.625rem;
+    margin-bottom: 6rem;
+}
+
+.crew-role {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.3125rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.crew-name {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: #FFFFFF;
+}
+
+.crew-desc {
+    margin-top: 1.6875rem;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: #D0D6F9;
+    width: 27.75vw;
+    height: 10rem;
+}
+
+.carousel-buttons {
+    margin-top: 7.5rem;
+}
+
+.carousel-button {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    border-radius: 50%;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    margin-right: 1.5rem;
+}
+
+.carousel-button:hover {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.active-button {
+    background: #FFFFFF;
+    opacity: 1;
+}
+
+.active-button:hover {
+    opacity: 1;
+}
+
+.crew-right {
+    position: relative;
+    width: 50%;
+}
+
+.crew-image {
+    position: absolute;
+    height: 37.5vh;
+    bottom: 0;
+    left: 2vw;
+}
+
+.crew-image-border {
+    display: none;
+}
+
+@media screen and (max-width: 1226px) {
+    .Crew {
+        background: url("../../Imgs/background-crew-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .crew-top {
+        height: auto;
+    }
+
+    .crew-left {
+        width: auto;
+        text-align: center;
+        padding: 0 5vw;
+    }
+
+    .crew-title {
+        position: static;
+        text-align: left;
+        display: block;
+        margin: 2.5rem 5vw 0;
+    }
+
+    .crew-details {
+        margin-top: 3.75rem;
+        margin-bottom: 0;
+        position: static;
+        width: auto;
+    }
+
+    .crew-name {
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.5rem;
+        line-height: 2.875rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .crew-desc {
+        width: 59.63vw;
+        margin: auto;
+        min-height: 7rem;
+        height: auto;
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        text-align: center;
+        color: #D0D6F9;
+        padding-top: 1rem;
+    }
+
+    .carousel-buttons {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .carousel-button {
+        width: 0.625rem;
+        height: 0.625rem;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .crew-bottom {
+        flex-direction: column;
+        position: static;
+        padding: 0;
+    }
+
+    .crew-right {
+        margin-top: 2.5rem;
+        width: auto;
+        text-align: center;
+    }
+
+    .crew-image {
+        position: static;
+        height: 55.85vh;
+        min-height: 572px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Crew {
+        background: url('../../Imgs/background-crew-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .crew-title {
+        text-align: center;
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.1875rem;
+        letter-spacing: 0.168rem;
+        text-transform: uppercase;
+        margin-top: 1.5rem;
+    }
+
+    .crew-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .crew-details {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2.0625rem;
+    }
+
+    .crew-role {
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.125rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        margin-top: 2rem;
+    }
+
+    .crew-name {
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 0.5rem;
+    }
+
+    .crew-desc {
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
+        text-align: center;
+        color: #D0D6F9;
+        width: 87.2vw;
+        margin-bottom: 6.5rem;
+    }
+
+    .crew-right {
+        margin-top: 2rem;
+    }
+
+    .crew-image {
+        height: 13.875rem;
+        width: auto;
+        min-height: auto;
+    }
+
+    .crew-image-border {
+        display: block;
+        width: 87.2vw;
+        height: 0.0625rem;
+        background: #ffffff;
+        margin: auto;
+    }
+
+    .carousel-buttons {
+        margin-top: 0;
+    }
+}
