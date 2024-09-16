@@ -5,7 +5,7 @@
 -Mobile Design ![alt text](mobile.png)
 
 ## Live Site
-
+  https://newspacetourism.netlify.app
 
 ## The challenge
 
@@ -21,13 +21,19 @@ Your challenge is to build out this multi-page space tourism website and get it 
 
 ## Technology Used
 
-Front-end
+### Front-end
 
- -**React**: JavaScript library for bulding user interfaces.
- -**HTML**: Markup language for structuring web content.
- -**CSS**: Stylesheet language for designing the website.
- -**Figma**: Tool for design and prototyping.
- -**Netlify**: for Deployment
+- **React**:  
+  JavaScript library for building user interfaces.
+- **HTML**:  
+  Markup language for structuring web content.
+- **CSS**:  
+  Stylesheet language for designing the website.
+- **Figma**:  
+  Tool for design and prototyping.
+- **Netlify**:  
+  For deployment.
+
 
 ## Getting Started
  1. **Clone the repository**
