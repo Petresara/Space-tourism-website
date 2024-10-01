@@ -12,7 +12,6 @@ function Home() {
                 <Navbar active={0} />
             </section>
 
-
             <section className="home-bottom">
                 <div className="home-left">
                     <div className="home-text">

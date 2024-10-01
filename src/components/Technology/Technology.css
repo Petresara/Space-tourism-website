@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@100;200;300;400;500&family=Bellefair&display=swap');
 
+
 .Technology {
     width: 100%;
     min-height: 100vh;
-    height: 900px;
+    height: 100vh;
     background: url("../../Imgs/background-technology-desktop.jpg");
     background-size: cover;
     color: white;
     text-align: left;
+    overflow: hidden;
 }
 
 .technology-top {
-    height: 136px;
+    height: auto;
     margin-bottom: 76px;
 }
 
@@ -139,7 +141,8 @@
 }
 
 .technology-image {
-    width: 35.76vw;
+    width: 60.6vh;
+    height: 100%;
 }
 
 @media screen and (max-width: 1226px) {
